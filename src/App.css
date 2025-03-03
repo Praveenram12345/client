@@ -1,0 +1,150 @@
+/* carousel.css */
+
+/* Ensure the carousel takes full width and center it */
+.carousel {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Style for the carousel items */
+.carousel-item {
+  height: 600px; /* Increase height for a larger visual effect */
+  position: relative;
+}
+
+.carousel img {
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+  height: 80%; /* Full height for the image */
+  transition: transform 1s ease-in-out; /* Smooth transition for zoom effect */
+  width: 50%;
+}
+
+/* Add a zoom-in effect on hover */
+.carousel-item:hover img {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+/* Caption styling */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* More subtle text shadow */
+  font-family: 'Arial', sans-serif;
+  padding: 0 20px; /* Add some padding around the text */
+}
+
+/* Styling for the title */
+.carousel-caption h5 {
+  font-size: 3rem; /* Larger font for the title */
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Start hidden */
+}
+
+/* Transition effect for the title */
+.carousel-item:hover .carousel-caption h5 {
+  opacity: 1; /* Fade in effect on hover */
+}
+
+
+
+
+
+/* Navigation controls (optional) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker control icons */
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+/* Style for the carousel indicators */
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.7); /* Light indicators */
+}
+
+.carousel-indicators .active {
+  background-color: #f44336; /* Active indicator with a red color */
+}
+
+/* register */
+/* Register Page Styles */
+.rg-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-heading1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Success/Error Message */
+.message {
+  font-size: 16px;
+  color: green;
+  background: #e6ffed;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+.custom-form {
+  text-align: left;
+}
+
+.custom-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.custom-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.custom-button:hover {
+  background: linear-gradient(45deg, #0056b3, #0099cc);
+}
